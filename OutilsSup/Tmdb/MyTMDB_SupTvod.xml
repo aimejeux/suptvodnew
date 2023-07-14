@@ -1,0 +1,30 @@
+<screen name="Screen_MyTMDB_SupTvod" position="0,0" size="1920,1080" backgroundColor="#41000000" flags="wfNoBorder" title="My TMDB SupTvod">
+    <ePixmap position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Screan TMDB.png" zPosition="0" transparent="1" />
+    <widget name="menu" position="40,184" size="480,629" foregroundColorSelected="#2ECCFA" backgroundColor="#41000000" foregroundColor="#ffffff" backgroundColorSelected="#41000000" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/bar_tmdb.png" backgroundPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Selctlist.png" enableWrapAround="1" zPosition="2" scrollbarMode="showNever" transparent="1" />
+	<widget name="menuTrailer" position="40,184" size="480,629" foregroundColorSelected="#2ECCFA" backgroundColor="#41000000" foregroundColor="#ffffff" backgroundColorSelected="#41000000" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/bar_tmdb.png" backgroundPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Selctlist.png" enableWrapAround="1" zPosition="2" scrollbarMode="showNever" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="55,8" size="420,100" zPosition="5" font="Regular; 35" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" halign="center">
+    <convert type="ClockToText">Format:%H:%M:%S</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1492,8" size="420,100" font="Regular; 35" halign="center" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" zPosition="5">
+    <convert type="ClockToText">Format:%d. %B. %Y</convert>
+    </widget>
+    <widget source="TxT_8" options="movetype=running,wrap,startpoint=0,direction=top,steptime=30,repeat=0,oneshot=0,startdelay=1000,always=0" render="SupTVoDNeWRunningText" position="1205,586" size="695,410" backgroundColor="black" foregroundColor="#ffffff" font="Regular;28" transparent="0" zPosition="4" />	    
+    <widget name="Titlet" position="40,121" size="480,50" zPosition="4" font="Regular; 25" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+    <widget name="poster" position="564,164" size="600,800" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/clear.png" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="TxT_0" position="1211,178" size="732,50" zPosition="4" font="Regular; 25" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+    <widget name="TxT_1" position="1211,238" size="732,50" zPosition="4" font="Regular; 25" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+    <widget name="TxT_2" position="1211,298" size="732,50" zPosition="4" font="Regular; 25" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+    <widget name="TxT_3" position="1211,358" size="732,50" zPosition="4" font="Regular; 25" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+    <widget name="TxT_4" position="1211,418" size="732,50" zPosition="4" font="Regular; 25" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+    <widget name="TxT_5" position="1211,478" size="732,50" zPosition="4" font="Regular; 25" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	<widget name="TxT_6" position="1211,538" size="732,50" zPosition="4" font="Regular; 25" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	<widget name="Infos" position="565,975" size="600,50" zPosition="4" font="Regular; 25" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	<widget name="Data" position="34,891" size="500,50" zPosition="4" font="Regular; 25" foregroundColor="#ffffff" backgroundColor="black" transparent="0" halign="center" valign="center" />
+	<widget name="ttltrailer" position="740,1034" size="1180,50" zPosition="4" font="Regular; 30" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/stars/star_b.png" position="762,135" size="220,20" alphatest="blend" zPosition="5" transparent="1" />
+	<widget render="SupTVoDNeWStalker" source="rating" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/stars/star.png" position="762,135" size="220,20" alphatest="blend" transparent="1" zPosition="5" />
+	<widget name="Searchlang" position="40,831" size="480,50" zPosition="4" font="Regular; 25" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	<eLabel text="Exit" position="40,1040" zPosition="2" size="198,35" halign="center" font="Regular; 28" transparent="1" foregroundColor="#ffffff" backgroundColor="#41000000" />
+	<eLabel text="Play Trailer" position="280,1040" zPosition="2" size="198,35" halign="center" font="Regular; 28" transparent="1" foregroundColor="#ffffff" backgroundColor="#41000000" />
+	<eLabel text="Settings" position="520,1040" zPosition="2" size="198,35" halign="center" font="Regular; 28" transparent="1" foregroundColor="#ffffff" backgroundColor="#41000000" />
+</screen>
