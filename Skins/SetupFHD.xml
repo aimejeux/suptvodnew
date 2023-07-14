@@ -1,0 +1,18 @@
+<screen name="SupTVoDNeW_Config" position="0,0" size="1920,1080" flags="wfNoBorder" title="Free Server mino60" backgroundColor="transparent">
+    <ePixmap position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Settings.png" zPosition="0" transparent="1" />
+	<widget name="Box_1" position="410,870" zPosition="4" size="1100,150" font="Regular;32" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	<widget name="Box_2" position="410,120" zPosition="4" size="1100,400" font="Regular;32" foregroundColor="white" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+    <widget name="Box_3" position="53,563" zPosition="4" size="605,40" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+    <eLabel text="Exit" zPosition="4" position="270,938" size="147,30" font="Regular; 20" transparent="1" backgroundColor="black" halign="center" valign="center" />
+    <eLabel text="Save" zPosition="4" position="292,976" size="147,30" font="Regular; 20" transparent="1" backgroundColor="black" halign="center" valign="center" />
+    <eLabel text="Import Server " zPosition="4" position="292,1016" size="147,30" font="Regular; 20" transparent="1" backgroundColor="black" halign="center" valign="center" />
+    <widget source="session.VideoPicture" render="Pig" position="1203,112" size="675,400" zPosition="2" backgroundColor="#df0b1300" />
+	<widget source="global.CurrentTime" render="Label" position="11,5" size="231,37" zPosition="5" font="Regular; 30" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" halign="center">
+	<convert type="ClockToText">Format:%H:%M:%S</convert>
+	</widget>
+	<widget source="global.CurrentTime" render="Label" position="274,5" size="280,37" font="Regular; 28" halign="center" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" zPosition="5">
+	<convert type="ClockToText">Format:%d. %B. %Y</convert>
+	</widget>
+    <widget name="config" position="13,112" size="732,384" itemHeight="32" scrollbarMode="showNever" zPosition="4" transparent="1" font="Regular; 28" backgroundColor="#80000000" foregroundColor="#fff4e6" foregroundColorSelected="white" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/barre select_Settings.png" />
+	<ePixmap position="250,938" size="50,144" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/ColorsBouttons.png" zPosition="0" transparent="1" alphatest="blend" />
+</screen>
