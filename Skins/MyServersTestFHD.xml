@@ -1,0 +1,56 @@
+<screen name="Screen_MyServersTest" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" title="My Servers Test">
+    <!-- <widget name="spinner" position="12,12" size="48,48" zPosition="4" alphatest="blend" transparent="0" /> -->
+	<!-- <widget name="spinner" position="840,20"  size="187,20" transparent="0" zPosition="10" /> -->
+    <ePixmap position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Menu_Test.png" zPosition="0" transparent="0" />
+    <widget name="menu" position="680,500" size="500,1000" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/barre_menu_test.png" foregroundColorSelected="#2ECCFA" backgroundColor="black" foregroundColor="#ffffff" backgroundColorSelected="black" enableWrapAround="1" zPosition="2" scrollbarMode="showNever" transparent="1" />
+    <!-- <widget name="infoss1" position="0,0" zPosition="4" size="0,0" font="Regular;34" foregroundColor="white" backgroundColor="#80000000" transparent="0" halign="center" valign="center" /> -->
+    <widget name="Infos" position="55,1147" size="500,100" zPosition="4" font="Regular; 70" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	<widget name="Explic" position="1223,870" size="700,200" zPosition="4" font="Regular; 28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	<widget name="Explic_1" position="1223,920" size="700,250" zPosition="4" font="Regular; 28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+    <widget source="session.VideoPicture" render="Pig" position="1250,38" size="650,400" zPosition="2" backgroundColor="#df0b1300" />
+    <widget source="session.CurrentService" render="Label" position="1250,376" size="650,63" zPosition="3" font="Regular; 34" noWrap="1" backgroundColor="#80000000" transparent="0" valign="center" halign="center" foregroundColor="white">
+    <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="1250,36" size="650,63" zPosition="3" font="Regular; 26" backgroundColor="#80000000" transparent="0" valign="center" halign="center" foregroundColor="white">
+    <convert type="EventName">Name</convert>
+    </widget>
+	<widget source="global.CurrentTime" render="Label" position="11,5" size="231,37" zPosition="5" font="Regular; 30" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" halign="center">
+	<convert type="ClockToText">Format:%H:%M:%S</convert>
+	</widget>
+	<widget source="global.CurrentTime" render="Label" position="274,5" size="280,37" font="Regular; 28" halign="center" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" zPosition="5">
+	<convert type="ClockToText">Format:%d. %B. %Y</convert>
+	</widget>
+	<widget backgroundColor="black" font="Regular; 28" zPosition="5" foregroundColor="#ffffff" halign="left" position="1250,390" render="Label" size="100,32" source="session.Event_Now" transparent="1">
+	<convert type="EventTime">StartTime</convert>
+	<convert type="ClockToText">Default</convert>
+	</widget>
+	<widget font="Regular; 28" halign="center" zPosition="5" backgroundColor="#80000000" foregroundColor="#ffffff" position="1800,390" render="Label" size="100,32" source="session.Event_Now" transparent="1">
+	<convert type="EventTime">EndTime</convert>
+	<convert type="ClockToText">Format:%H:%M</convert>
+	</widget>
+	<widget source="session.Event_Now" options="movetype=running,wrap,startpoint=0,direction=top,steptime=30,repeat=0,oneshot=0,startdelay=1000,always=0" render="SupTVoDNeWRunningText" foregroundColor="white" halign="center" position="1250,600" size="650,260" font="Regular; 28" zPosition="1" backgroundColor="black" transparent="1">
+	<convert type="EventName">ExtendedDescription</convert>
+	</widget>
+	<!-- <widget source="session.CurrentService" render="Label" position="30,720" size="1900,250" zPosition="4" font="Regular; 20" foregroundColor="#ffffff" halign="left" backgroundColor="#80000000" transparent="1"> -->
+	<!-- <convert type="FreeDownloadYano">download</convert> -->
+	<!-- </widget> -->
+	<widget name="Version" position="190,50" size="400,30" zPosition="4" font="Regular; 35" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	<widget name="poster" position="170,70" size="300,300" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/go.png" zPosition="2" transparent="1" alphatest="on" />
+	<widget name="Img_0" position="540,748" size="70,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/enable.png" zPosition="2" transparent="1" alphatest="blend" />
+	<widget name="Img_1" position="540,750" size="70,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/desable.png" zPosition="2" transparent="1" alphatest="blend" />
+	<widget name="Img_2" position="540,850" size="70,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/enable.png" zPosition="2" transparent="1" alphatest="blend" />
+	<widget name="Img_3" position="540,850" size="70,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/desable.png" zPosition="2" transparent="1" alphatest="blend" />
+	<widget name="Img_4" position="540,950" size="70,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/enable.png" zPosition="2" transparent="1" alphatest="blend" />
+	<widget name="Img_5" position="540,950" size="70,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/desable.png" zPosition="2" transparent="1" alphatest="blend" />
+	<widget name="Txt_0" position="30,420" size="400,30" zPosition="4" font="Regular; 26" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	<widget name="Txt_1" position="30,450" size="400,30" zPosition="4" font="Regular; 26" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	<widget name="Txt_2" position="30,480" size="400,30" zPosition="4" font="Regular; 26" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	<widget name="Txt_3" position="30,510" size="400,30" zPosition="4" font="Regular; 26" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	<widget name="Txt_4" position="30,540" size="400,30" zPosition="4" font="Regular; 26" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	<widget name="Txt_5" position="30,570" size="400,30" zPosition="4" font="Regular; 26" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	<widget name="Txt_6" position="30,600" size="400,30" zPosition="4" font="Regular; 26" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	<widget name="Txt_7" position="30,630" size="900,30" zPosition="4" font="Regular; 26" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	<widget name="Txt_8" position="30,660" size="400,30" zPosition="4" font="Regular; 26" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	<!-- <widget source="Infos_Download" render="Label" position="30,690" size="400,30" backgroundColor="#44000000" foregroundColor="#ffffff" font="Regular;32" transparent="1" zPosition="4" /> -->
+	<widget name="Tail_Image" position="30,690" size="400,30" zPosition="4" font="Regular; 26" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+</screen>
