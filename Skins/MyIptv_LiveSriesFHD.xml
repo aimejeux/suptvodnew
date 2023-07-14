@@ -1,0 +1,29 @@
+<screen name="Screen_MyIptv_LiveSries" position="0,0" size="1920,1080" backgroundColor="#41000000" flags="wfNoBorder" title="My Iptv_LiveSries">
+	    <ePixmap position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/main_supvod4.png" zPosition="0" transparent="1" />
+	    <widget name="menu" position="19,164" size="732,518" foregroundColorSelected="#2ECCFA" backgroundColor="#41000000" foregroundColor="#ffffff" backgroundColorSelected="#41000000" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/x379.png" backgroundPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Selctlist.png" enableWrapAround="1" zPosition="2" scrollbarMode="showNever" transparent="1" />
+		<widget name="menu_category" position="19,164" size="732,518" foregroundColorSelected="#2ECCFA" backgroundColor="#41000000" foregroundColor="#ffffff" backgroundColorSelected="#41000000" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/x379.png" backgroundPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Selctlist.png" enableWrapAround="1" zPosition="2" scrollbarMode="showNever" transparent="1" />
+	    <widget source="session.VideoPicture" render="Pig" position="1203,112" size="675,400" zPosition="2" backgroundColor="#df0b1300" />
+	    <widget source="session.CurrentService" render="Label" position="1203,464" size="675,63" zPosition="3" font="Regular; 34" noWrap="1" backgroundColor="#80000000" transparent="0" valign="center" halign="center" foregroundColor="white">
+	    <convert type="ServiceName">Name</convert>
+	    </widget>
+	    <widget source="global.CurrentTime" render="Label" position="11,5" size="231,37" zPosition="5" font="Regular; 30" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" halign="center">
+	    <convert type="ClockToText">Format:%H:%M:%S</convert>
+	    </widget>
+	    <widget source="global.CurrentTime" render="Label" position="274,5" size="280,37" font="Regular; 28" halign="center" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" zPosition="5">
+	    <convert type="ClockToText">Format:%d. %B. %Y</convert>
+	    </widget>
+	    <widget name="Infos" position="135,829" size="700,83" zPosition="4" font="Regular; 25" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="left" valign="top" />
+	    <widget name="Infoselect" position="19,716" size="732,50" zPosition="4" font="Regular;35" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <!-- <widget name="Infoserveriptv" position="843,829" size="1050,250" zPosition="4" font="Regular;28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="center" valign="centre" /> -->
+	    <widget source="Infoserveriptv" options="movetype=running,wrap,startpoint=0,direction=top,steptime=30,repeat=0,oneshot=0,startdelay=1000,always=0" render="SupTVoDNeWRunningText" position="848,826" size="1070,250" backgroundColor="#44000000" foregroundColor="#ffffff" font="Regular;32" transparent="1" zPosition="4" />
+		<eLabel text="IPTV" zPosition="4" position="19,91" size="732,50" font="Regular; 38" transparent="1" foregroundColor="#2ECCFA" backgroundColor="#80000000" halign="right" />
+	    <eLabel text="Exit" zPosition="4" position="49,913" size="120,40" font="Regular; 25" transparent="1" foregroundColor="#ffffff" backgroundColor="#80000000" halign="left" />
+	    <eLabel text="Ok" zPosition="4" position="49,951" size="220,40" font="Regular; 25" transparent="1" foregroundColor="#ffffff" backgroundColor="#80000000" halign="left" />
+	    <eLabel text="Settings" zPosition="4" position="49,1024" size="120,40" font="Regular; 25" transparent="1" foregroundColor="#ffffff" backgroundColor="#80000000" halign="left" />    
+	    <eLabel text="Server : " zPosition="4" position="49,829" size="120,40" font="Regular; 25" transparent="1" foregroundColor="#ffffff" backgroundColor="#80000000" halign="left" />
+		<eLabel text="Show_Hide Screan" zPosition="4" position="49,982" size="220,40" font="Regular; 25" transparent="1" foregroundColor="#ffffff" backgroundColor="#80000000" halign="left" />
+	    <ePixmap position="3,910" size="50,144" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/ColorsBouttons.png" zPosition="0" transparent="1" alphatest="blend" />
+	    <widget name="Titlet" position="19,91" size="732,50" zPosition="4" font="Regular; 25" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <widget name="serveriptv" position="788,560" size="1120,210" zPosition="4" font="Regular; 28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	    <widget name="poster" position="772,92" size="400,465" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/clear.png" zPosition="1" transparent="1" alphatest="blend" />
+</screen>
