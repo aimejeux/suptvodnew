@@ -1,0 +1,29 @@
+<screen name="nPlaylist_New" position="0,0" size="1920,1080" backgroundColor="#41000000" flags="wfNoBorder" title="Playlist">
+	<ePixmap position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/main_supvod2.png" zPosition="0" transparent="1" />
+	<widget name="playlist" backgroundColor="#41000000" foregroundColor="#2ECCFA" position="19,716" size="732,50" zPosition="2" font="Regular;50" transparent="1" halign="center" valign="center" />
+	<widget name="feedlist" position="19,164" size="732,518" foregroundColorSelected="#2ECCFA" backgroundColor="#41000000" foregroundColor="#ffffff" backgroundColorSelected="#41000000" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/x379.png" backgroundPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Selctlist.png" enableWrapAround="1" zPosition="2" scrollbarMode="showNever" transparent="1" />
+	<!-- <widget name="description" backgroundColor="#41000000" foregroundColor="foreground" position="337,820" size="1588,265" font="Regular; 30" zPosition="5" transparent="1" halign="left" valign="top" /> -->
+	<widget source="description" options="movetype=running,wrap,startpoint=0,direction=top,steptime=30,repeat=0,oneshot=0,startdelay=1000,always=0" render="SupTVoDNeWRunningText" position="337,820" size="1588,265" backgroundColor="#44000000" foregroundColor="#ffffff" font="Regular;32" transparent="1" zPosition="4" />
+	<widget name="poster" position="770,122" size="400,520" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/clear.png" zPosition="1" transparent="1" alphatest="blend" />
+	<!-- <widget name="info" font="Regular;22" backgroundColor="#41000000" foregroundColor="foreground" position="1040,100" size="114,370" /> -->
+	<widget source="session.VideoPicture" render="Pig" position="1203,112" size="675,400" zPosition="2" backgroundColor="#df0b1300" />
+	<widget source="session.CurrentService" render="Label" position="1203,464" size="675,63" zPosition="3" font="Regular; 34" noWrap="1" backgroundColor="#80000000" transparent="0" valign="center" halign="center" foregroundColor="white">
+	<convert type="ServiceName">Name</convert>
+	</widget>
+	<widget name="NbrFilms" backgroundColor="#41000000" foregroundColor="foreground" position="19,85" size="732,50" zPosition="2" font="Regular;30" transparent="1" halign="left" valign="center" />
+	<widget name="TitleFilms" backgroundColor="#41000000" foregroundColor="foreground" position="19,766" size="732,50" zPosition="2" font="Regular;30" transparent="1" halign="center" valign="center" />
+	<widget name="InfosServer" backgroundColor="#41000000" foregroundColor="white" position="1203,588" size="550,48" zPosition="2" font="Regular;32" transparent="1" halign="left" valign="center" />
+	<widget name="InfosServer1" backgroundColor="#41000000" foregroundColor="white" position="1203,648" size="550,48" zPosition="2" font="Regular;32" transparent="1" halign="left" valign="center" />
+	<widget name="InfosServer2" backgroundColor="#41000000" foregroundColor="white" position="1203,704" size="550,48" zPosition="2" font="Regular;32" transparent="1" halign="left" valign="center" />
+	<widget source="global.CurrentTime" render="Label" position="11,5" size="231,37" zPosition="5" font="Regular; 30" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" halign="center">
+	<convert type="ClockToText">Format:%H:%M:%S</convert>
+	</widget>
+	<widget source="global.CurrentTime" render="Label" position="274,5" size="280,37" font="Regular; 28" halign="center" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" zPosition="5">
+	<convert type="ClockToText">Format:%d. %B. %Y</convert>
+	</widget>
+	<ePixmap position="3,910" size="50,144" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/ColorsBouttons.png" zPosition="4" transparent="1" alphatest="blend" />
+	<widget name="exit_menu" position="62,913" zPosition="4" size="150,48" halign="left" font="Regular;22" transparent="1" foregroundColor="foreground" backgroundColor="#41000000" />
+	<widget name="green_infsrvr" position="62,953" zPosition="4" size="150,48" halign="left" font="Regular;22" transparent="1" foregroundColor="foreground" backgroundColor="#41000000" />
+	<widget name="backtovideo" position="62,990" zPosition="4" size="250,48" halign="left" font="Regular;22" transparent="1" foregroundColor="foreground" backgroundColor="#41000000" />
+	<widget name="yellow_config" position="62,1028" zPosition="4" size="250,48" halign="left" font="Regular;22" transparent="1" foregroundColor="foreground" backgroundColor="#41000000" />
+</screen>
