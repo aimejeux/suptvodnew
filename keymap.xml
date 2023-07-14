@@ -1,0 +1,51 @@
+<keymap>
+	<map context="nStreamPlayerPlaylist">
+		<key id="KEY_OK" mapto="ok" flags="m" />
+		<key id="KEY_POWER" mapto="power" flags="m" />					
+		<key id="KEY_RED" mapto="homePlaylist" flags="m" />
+		<key id="KEY_CHANNELUP" mapto="nextPlaylist" flags="m" />
+		<key id="KEY_CHANNELDOWN" mapto="prevPlaylist" flags="m" />
+		<key id="KEY_BLUE" mapto="backToVideo" flags="m" />
+		<key id="KEY_GREEN" mapto="getinfosserver" flags="m" />
+		<key id="KEY_YELLOW" mapto="MyConfig" flags="m" />
+		<key id="KEY_MENU" mapto="InfosOXml" flags="m" />
+		<key id="KEY_ESC" mapto="exitPlugin" flags="m" />
+		<key id="KEY_EXIT" mapto="homePlaylist" flags="m" />
+		<key id="KEY_TV" mapto="retourservice" flags="m" />
+	</map>
+	<map context="nStreamPlayerVOD">
+		<key id="KEY_OK" mapto="ok" flags="m" />
+		<key id="KEY_POWER" mapto="power" flags="m" />
+		<key id="KEY_EXIT" mapto="exitVOD" flags="m" />
+		<key id="KEY_ESC" mapto="exitVOD" flags="m" />
+ 		<key id="KEY_UP" mapto="exitVOD" flags="m" />
+		<key id="KEY_DOWN" mapto="exitVOD" flags="m" />
+ 		<key id="KEY_TV" mapto="stopVOD" flags="m" />
+		<key id="KEY_STOP" mapto="stopVOD" flags="m" />
+		<key id="KEY_BLUE" mapto="timeshift_autoplay" flags="m" />
+		<key id="KEY_GREEN" mapto="playnPreviousvideo_box" flags="m" />
+		<key id="KEY_YELLOW" mapto="playnextvideo_box" flags="m" />
+		<key id="KEY_LEFT" mapto="prevVideo" flags="m" />
+		<key id="KEY_RIGHT" mapto="nextVideo" flags="m" />
+		<key id="KEY_RECORD" mapto="timeshift" flags="m" />
+		<key id="KEY_CHANNELUP" mapto="nextVideo" flags="m" />
+		<key id="KEY_CHANNELDOWN" mapto="prevVideo" flags="m" />
+		<key id="KEY_NEXT" mapto="nextAR" flags="m" />
+		<key id="KEY_PREVIOUS" mapto="prevAR" flags="m" />
+		<key id="KEY_INFO" mapto="get_link" flags="m" />
+		<key id="KEY_MENU" mapto="get_resum" flags="m" />
+	</map>
+	<map context="StalkerPlayerPlaylist">
+		<key id="KEY_OK" mapto="ok" flags="m" />
+		<key id="KEY_UP" mapto="up" flags="m" />					
+		<key id="KEY_DOWN" mapto="down" flags="m" />
+		<key id="KEY_LEFT" mapto="left" flags="m" />
+		<key id="KEY_RIGHT" mapto="right" flags="m" />
+		<key id="KEY_RED" mapto="cancel_Stalk" flags="m" />
+		<key id="KEY_BLUE" mapto="show_hide" flags="m" />
+		<key id="KEY_EXIT" mapto="cancel_Stalk" flags="m" />
+		<key id="KEY_MENU" mapto="get_Tmdb" flags="m" />
+		<key id="KEY_RECORD" mapto="Downloadvideo" flags="m" />
+		<key id="KEY_1" mapto="Go_To_Pg" flags="m" />
+	</map>
+</keymap>
