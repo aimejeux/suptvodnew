@@ -1,0 +1,50 @@
+<screen name="Xtream_Player_New" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" title="..." borderWidth="0" borderColor="transparent">
+	<ePixmap position="7,870" size="1418,200" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Xtream_Player.png" alphatest="blend" zPosition="1" transparent="1" />
+	<ePixmap position="335,765" size="1090,100" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Xtream_2.png" alphatest="blend" zPosition="1" transparent="1" />
+	<ePixmap position="1728,834" size="200,200" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/chbah.png" alphatest="blend" zPosition="1" transparent="1" />
+	<widget name="state" font="Regular;18" position="347,933" size="80,24" transparent="1" backgroundColor="#41000000" foregroundColor="#ffffff" zPosition="3" />
+	<widget name="cover" position="1518,781" size="210,289" zPosition="2" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/clear.png" alphatest="blend" />
+	<widget name="cover_" position="0,0" size="1920,1080" zPosition="6" transparent="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Cache_stalker.png" alphatest="blend" />
+	<widget source="session.CurrentService" foregroundColor="#ffffff" render="Label" position="477,870" size="100,45" font="Regular;28" halign="left" valign="center" backgroundColor="#06224f" transparent="1" zPosition="2">
+	<convert type="ServicePosition">Position</convert>
+	</widget>
+	<widget source="session.CurrentService" render="PositionGauge" backgroundColor="#206df9" position="439,928" size="900,30" zPosition="3" pointer="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/slider_1280x10_hbg.png:900,1" transparent="1">
+	<convert type="ServicePosition">Gauge</convert>
+	</widget>
+	<widget source="session.CurrentService" foregroundColor="#2ECCFA" render="Label" position="510,967" size="800,50" font="Regular;35" backgroundColor="#41000000" transparent="1" halign="center" valign="center" zPosition="2">
+	<convert type="ServiceName">Name</convert>
+	</widget>
+	<widget source="session.CurrentService" foregroundColor="#ffffff" render="Label" position="1339,932" size="85,30" font="Regular; 23" halign="right" backgroundColor="#41000000" transparent="1" zPosition="2">
+	<convert type="ServicePosition">Length</convert>
+	</widget>
+	<widget source="session.CurrentService" foregroundColor="#2ECCFA" render="Label" position="1276,870" size="100,45" zPosition="2" font="Regular;28" halign="right" valign="center" backgroundColor="#41000000" transparent="1">
+	<convert type="ServicePosition">Remaining</convert>
+	</widget>
+	<widget name="cont_play" position="361,981" zPosition="2" size="180,23" halign="left" font="Regular;20" transparent="1" foregroundColor="#ffffff" backgroundColor="#41000000" text="" />
+	<eLabel position="729,1020" zPosition="2" size="70,25" halign="center" font="Regular; 24" transparent="1" foregroundColor="#2ECCFA" backgroundColor="#41000000" text="-10s" />
+	<eLabel position="837,1020" zPosition="2" size="70,25" halign="center" font="Regular; 24" transparent="1" foregroundColor="#2ECCFA" backgroundColor="#41000000" text="-1m" /> 		
+	<eLabel position="943,1020" zPosition="4" size="70,25" halign="center" font="Regular; 24" transparent="1" foregroundColor="#2ECCFA" backgroundColor="#41000000" text="-5m" /> 		
+	<eLabel position="1133,1020" zPosition="2" size="70,25" halign="center" font="Regular; 24" transparent="1" foregroundColor="#2ECCFA" backgroundColor="#41000000" text="+10s" /> 		
+	<eLabel position="1243,1020" zPosition="2" size="70,25" halign="center" font="Regular; 24" transparent="1" foregroundColor="#2ECCFA" backgroundColor="#41000000" text="+1m" /> 		
+	<eLabel position="1343,1020" zPosition="2" size="70,25" halign="center" font="Regular; 24" transparent="1" foregroundColor="#2ECCFA" backgroundColor="#41000000" text="+5m" />
+    <widget source="session.CurrentService" render="Label" zPosition="2" position="335,1047" size="55,22" halign="right" font="Regular;22" foregroundColor="white" transparent="1" backgroundColor="black">
+    <convert type="ServiceInfo">VideoWidth</convert>
+    </widget>
+    <eLabel text="x" zPosition="2" position="390,1047" size="15,22" halign="left" font="Regular;22" foregroundColor="#2ECCFA" transparent="1" backgroundColor="black" />
+    <widget source="session.CurrentService" render="Label" zPosition="2" position="405,1047" size="55,22" halign="left" font="Regular;22" foregroundColor="white" transparent="1" backgroundColor="black">
+    <convert type="ServiceInfo">VideoHeight</convert>
+    </widget>
+	<!-- <widget name="Descriptions" position="10,10" zPosition="4" size="1897,280" font="Regular;32" transparent="0" foregroundColor="white" backgroundColor="#80000000" halign="center" valign="top" /> -->
+	<widget source="global.CurrentTime" render="Label" position="1194,781" size="231,37" zPosition="5" font="Regular; 30" foregroundColor="#ffffff" backgroundColor="black" transparent="1" halign="center">
+	<convert type="ClockToText">Format:%H:%M:%S</convert>
+	</widget>
+	<widget source="global.CurrentTime" render="Label" position="1194,828" size="231,37" font="Regular; 28" halign="center" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" zPosition="5">
+	<convert type="ClockToText">Format:%d. %B. %Y</convert>
+	</widget>
+    <widget source="Service" render="Label" position="20,610" size="110,24" zPosition="14" halign="left" font="Regular;20" foregroundColor="yellow" backgroundColor="black" transparent="0">
+      <convert type="MovieInfo">ShortDescription</convert>
+    </widget>
+	<widget source="session.CurrentService" render="Picon" position="0,0" zPosition="14" size="100,60" transparent="1" alphatest="blend">
+	<convert type="MovieReference"/>
+	</widget>
+</screen>
