@@ -1,0 +1,25 @@
+<screen name="Screen_MyPlutoTvNew_Second" position="0,0" size="1920,1080" backgroundColor="#41000000" flags="wfNoBorder" title="MyPlutoTvNew_Second">
+    <ePixmap position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/main_supvod4.png" zPosition="0" transparent="1" />
+    <widget name="menu_Plutotv_Second" position="19,164" size="732,518" foregroundColorSelected="#2ECCFA" backgroundColor="#41000000" foregroundColor="#ffffff" backgroundColorSelected="#41000000" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/x379.png" backgroundPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Selctlist.png" enableWrapAround="1" zPosition="2" scrollbarMode="showNever" transparent="1" />
+    <widget name="menu_list_catego" position="19,164" size="732,518" foregroundColorSelected="#2ECCFA" backgroundColor="#41000000" foregroundColor="#ffffff" backgroundColorSelected="#41000000" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/x379.png" backgroundPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Selctlist.png" enableWrapAround="1" zPosition="2" scrollbarMode="showNever" transparent="1" />
+    <widget name="listprogramme" position="757,659" size="1150,518" foregroundColorSelected="#2ECCFA" backgroundColor="#41000000" foregroundColor="#ffffff" backgroundColorSelected="#41000000" enableWrapAround="1" zPosition="2" scrollbarMode="showNever" transparent="1" />
+	<widget source="session.VideoPicture" render="Pig" position="1203,112" size="675,400" zPosition="2" backgroundColor="#df0b1300" />
+    <widget source="session.CurrentService" render="Label" position="1203,464" size="675,63" zPosition="3" font="Regular; 34" noWrap="1" backgroundColor="#80000000" transparent="0" valign="center" halign="center" foregroundColor="white">
+    <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="11,5" size="231,37" zPosition="5" font="Regular; 30" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" halign="center">
+    <convert type="ClockToText">Format:%H:%M:%S</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="274,5" size="280,37" font="Regular; 28" halign="center" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" zPosition="5">
+    <convert type="ClockToText">Format:%d. %B. %Y</convert>
+    </widget>
+    <widget name="Infoselect" position="19,716" size="732,50" zPosition="4" font="Regular;38" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+    <eLabel text="Exit" zPosition="4" position="49,913" size="120,40" font="Regular; 25" transparent="1" foregroundColor="#ffffff" backgroundColor="#80000000" halign="left" />
+    <eLabel text="Ok" zPosition="4" position="49,951" size="220,40" font="Regular; 25" transparent="1" foregroundColor="#ffffff" backgroundColor="#80000000" halign="left" />
+    <eLabel text="Settings" zPosition="4" position="49,1024" size="120,40" font="Regular; 25" transparent="1" foregroundColor="#ffffff" backgroundColor="#80000000" halign="left" />    
+    <widget name="poster" position="772,94" size="400,550" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/playlist/logoplutotv.png" zPosition="1" transparent="1" alphatest="blend" />
+    <!-- <widget name="Infodiscript" position="303,828" size="1610,250" zPosition="4" font="Regular;35" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="center" valign="left" /> -->
+    <widget name="Title" position="19,91" size="732,50" zPosition="4" font="Regular; 40" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+    <widget name="myproxy" position="19,767" size="332,50" zPosition="4" font="Regular; 40" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+    <ePixmap position="3,910" size="50,144" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/ColorsBouttons.png" zPosition="0" transparent="1" alphatest="blend" />
+</screen>
