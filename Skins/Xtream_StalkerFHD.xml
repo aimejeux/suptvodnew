@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<skin>
+    <!-- Menu_Servers_Stalker -->
+    <screen name="Screen_MyStalkerIptv" position="0,0" size="1920,1080" backgroundColor="#41000000" flags="wfNoBorder" title="MyStalker Iptv">
+	    <ePixmap position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/main_supvod4.png" zPosition="0" transparent="1" />
+	    <widget name="menu_servers" position="19,164" size="732,518" foregroundColorSelected="#2ECCFA" backgroundColor="#41000000" foregroundColor="#ffffff" backgroundColorSelected="#41000000" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/x379.png" backgroundPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Selctlist.png" enableWrapAround="1" zPosition="2" scrollbarMode="showNever" transparent="1" />
+	    <widget source="session.VideoPicture" render="Pig" position="1203,112" size="675,400" zPosition="2" backgroundColor="#df0b1300" />
+	    <widget source="session.CurrentService" render="Label" position="1203,464" size="675,63" zPosition="3" font="Regular; 34" noWrap="1" backgroundColor="#80000000" transparent="0" valign="center" halign="center" foregroundColor="white">
+	    <convert type="ServiceName">Name</convert>
+	    </widget>
+	    <widget source="global.CurrentTime" render="Label" position="11,5" size="231,37" zPosition="5" font="Regular; 30" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" halign="center">
+	    <convert type="ClockToText">Format:%H:%M:%S</convert>
+	    </widget>
+	    <widget source="global.CurrentTime" render="Label" position="274,5" size="280,37" font="Regular; 28" halign="center" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" zPosition="5">
+	    <convert type="ClockToText">Format:%d. %B. %Y</convert>
+	    </widget>
+	    <widget name="Infos" position="135,829" size="700,40" zPosition="4" font="Regular; 25" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	    <widget name="Infoselect" position="19,716" size="732,50" zPosition="4" font="Regular;35" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <widget name="Dat_Exprt" position="1090,983" size="820,90" zPosition="4" font="Regular;28" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <eLabel text="Stalker" zPosition="4" position="19,91" size="732,50" font="Regular; 38" transparent="1" foregroundColor="#2ECCFA" backgroundColor="#80000000" halign="center" />
+	    <eLabel text="Exit" zPosition="4" position="49,913" size="120,40" font="Regular; 25" transparent="1" foregroundColor="#ffffff" backgroundColor="#80000000" halign="left" />
+	    <eLabel text="Ok" zPosition="4" position="49,951" size="220,40" font="Regular; 25" transparent="1" foregroundColor="#ffffff" backgroundColor="#80000000" halign="left" />
+	    <eLabel text="Settings" zPosition="4" position="49,1024" size="120,40" font="Regular; 25" transparent="1" foregroundColor="#ffffff" backgroundColor="#80000000" halign="left" />    
+	    <eLabel text="Server : " zPosition="4" position="49,829" size="120,40" font="Regular; 25" transparent="1" foregroundColor="#ffffff" backgroundColor="#80000000" halign="left" />
+		<eLabel text="Infos Server" zPosition="4" position="49,982" size="220,40" font="Regular; 25" transparent="1" foregroundColor="#ffffff" backgroundColor="#80000000" halign="left" />
+	    <ePixmap position="3,910" size="50,144" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/ColorsBouttons.png" zPosition="0" transparent="1" alphatest="blend" />
+	</screen>
+    <!-- Menu_Stalker_IPTV_VOD_SERIES -->
+    <screen name="Screen_MyStalkerIptv_Menu_Stalker" position="0,0" size="1920,1080" backgroundColor="#41000000" flags="wfNoBorder" title="Menu_Stalker">
+	    <ePixmap position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/main_supvod4.png" zPosition="0" transparent="1" />
+	    <widget name="menu_stalker_2" position="19,164" size="732,518" foregroundColorSelected="#2ECCFA" backgroundColor="#41000000" foregroundColor="#ffffff" backgroundColorSelected="#41000000" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/x379.png" backgroundPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Selctlist.png" enableWrapAround="1" zPosition="2" scrollbarMode="showNever" transparent="1" />
+	    <widget source="session.VideoPicture" render="Pig" position="1203,112" size="675,400" zPosition="2" backgroundColor="#df0b1300" />
+	    <widget source="session.CurrentService" render="Label" position="1203,464" size="675,63" zPosition="3" font="Regular; 34" noWrap="1" backgroundColor="#80000000" transparent="0" valign="center" halign="center" foregroundColor="white">
+	    <convert type="ServiceName">Name</convert>
+	    </widget>
+	    <widget source="global.CurrentTime" render="Label" position="11,5" size="231,37" zPosition="5" font="Regular; 30" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" halign="center">
+	    <convert type="ClockToText">Format:%H:%M:%S</convert>
+	    </widget>
+	    <widget source="global.CurrentTime" render="Label" position="274,5" size="280,37" font="Regular; 28" halign="center" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" zPosition="5">
+	    <convert type="ClockToText">Format:%d. %B. %Y</convert>
+	    </widget>
+	    <widget name="Infos" position="19,716" size="732,50" zPosition="4" font="Regular;35" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <widget name="Dat_Exprt" position="1210,5" size="700,70" zPosition="4" font="Regular;28" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <widget name="Infos_selct" position="169,829" size="820,40" zPosition="4" font="Regular; 25" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+		<widget name="loading" position="19,550" size="732,90" zPosition="6" font="Regular; 32" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	    <eLabel text="Stalker" zPosition="4" position="19,91" size="732,50" font="Regular; 38" transparent="1" foregroundColor="#2ECCFA" backgroundColor="#80000000" halign="center" />
+	    <eLabel text="Exit" zPosition="4" position="49,909" size="120,40" font="Regular; 25" transparent="1" foregroundColor="#ffffff" backgroundColor="#80000000" halign="left" />
+	    <eLabel text="Settings" zPosition="4" position="49,1020" size="120,40" font="Regular; 25" transparent="1" foregroundColor="#ffffff" backgroundColor="#80000000" halign="left" />    
+	    <eLabel text="Server : " zPosition="4" position="49,829" size="120,40" font="Regular; 25" transparent="1" foregroundColor="#ffffff" backgroundColor="#80000000" halign="left" />
+	    <ePixmap position="3,910" size="50,144" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/ColorsBouttons.png" zPosition="0" transparent="1" alphatest="blend" />
+	</screen>
+	<!-- Lis_IPTV -->
+    <screen name="Screen_MyStalkerIptv_Menu_Stalker_Channel" position="0,0" size="1920,1080" backgroundColor="#41000000" flags="wfNoBorder" title="Menu_Stalker_Channel">
+	    <ePixmap position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/main_supvod4.png" zPosition="0" transparent="1" />
+	    <widget name="menu_stalker_Channel" position="19,164" size="732,518" foregroundColorSelected="#2ECCFA" backgroundColor="#41000000" foregroundColor="#ffffff" backgroundColorSelected="#41000000" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/x379.png" backgroundPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Selctlist.png" enableWrapAround="1" zPosition="2" scrollbarMode="showNever" transparent="1" />
+	    <widget source="session.VideoPicture" render="Pig" position="1203,112" size="675,400" zPosition="2" backgroundColor="#df0b1300" />
+	    <widget source="session.CurrentService" render="Label" position="1203,464" size="675,63" zPosition="3" font="Regular; 34" noWrap="1" backgroundColor="#80000000" transparent="0" valign="center" halign="center" foregroundColor="white">
+	    <convert type="ServiceName">Name</convert>
+	    </widget>
+	    <widget source="global.CurrentTime" render="Label" position="11,5" size="231,37" zPosition="5" font="Regular; 30" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" halign="center">
+	    <convert type="ClockToText">Format:%H:%M:%S</convert>
+	    </widget>
+	    <widget source="global.CurrentTime" render="Label" position="274,5" size="280,37" font="Regular; 28" halign="center" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" zPosition="5">
+	    <convert type="ClockToText">Format:%d. %B. %Y</convert>
+	    </widget>
+	    <widget name="Infos" position="19,717" size="732,50" zPosition="4" font="Regular;28" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <widget name="Dat_Exprt" position="1210,5" size="700,70" zPosition="4" font="Regular;28" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <widget name="Infos_selct" position="19,87" size="732,50" zPosition="4" font="Regular;38" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+		<widget name="loading" position="19,782" size="732,90" zPosition="4" font="Regular;38" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <ePixmap position="3,910" size="50,144" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/ColorsBouttons.png" zPosition="0" transparent="1" alphatest="blend" />
+	</screen>
+	<!-- List_Stream_Iptv -->
+    <screen name="Screen_MyStalkerIptv_Menu_Stalker_Channel_List" position="0,0" size="1920,1080" backgroundColor="#41000000" flags="wfNoBorder" title="Menu_Stalker_Channel_List">
+	    <ePixmap position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/main_supvod4.png" zPosition="0" transparent="1" />
+	    <widget name="menu_stalker_Channel_List" position="19,164" size="732,518" foregroundColorSelected="#2ECCFA" backgroundColor="#41000000" foregroundColor="#ffffff" backgroundColorSelected="#41000000" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/x379.png" backgroundPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Selctlist.png" enableWrapAround="1" zPosition="2" scrollbarMode="showNever" transparent="1" />
+	    <widget source="session.VideoPicture" render="Pig" position="1203,112" size="675,400" zPosition="2" backgroundColor="#df0b1300" />
+	    <widget source="session.CurrentService" render="Label" position="1203,464" size="675,63" zPosition="3" font="Regular; 34" noWrap="1" backgroundColor="#80000000" transparent="0" valign="center" halign="center" foregroundColor="white">
+	    <convert type="ServiceName">Name</convert>
+	    </widget>
+	    <widget source="global.CurrentTime" render="Label" position="11,5" size="231,37" zPosition="5" font="Regular; 30" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" halign="center">
+	    <convert type="ClockToText">Format:%H:%M:%S</convert>
+	    </widget>
+	    <widget source="global.CurrentTime" render="Label" position="274,5" size="280,37" font="Regular; 28" halign="center" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" zPosition="5">
+	    <convert type="ClockToText">Format:%d. %B. %Y</convert>
+	    </widget>
+	    <widget name="Infos" position="19,717" size="732,50" zPosition="4" font="Regular;28" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <widget name="Dat_Exprt" position="1210,5" size="700,70" zPosition="4" font="Regular;28" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <widget name="Infos_selct" position="19,87" size="732,50" zPosition="4" font="Regular;38" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+		<widget name="Total" position="19,778" size="732,50" zPosition="4" font="Regular; 28" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+		<widget name="poster" position="772,122" size="400,520" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/clear.png" zPosition="1" transparent="1" alphatest="blend" />
+	    <ePixmap position="3,910" size="50,144" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/ColorsBouttons.png" zPosition="0" transparent="1" alphatest="blend" />
+	</screen>
+	<!-- VOD_List -->
+	<!-- List_Vod -->
+	<screen name="Screen_MyStalkerIptv_Menu_Stalker_VOD" position="0,0" size="1920,1080" backgroundColor="#41000000" flags="wfNoBorder" title="Menu_Stalker_VOD">
+	    <ePixmap position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/main_supvod4.png" zPosition="0" transparent="1" />
+	    <widget name="menu_stalker_Stalker_VOD" position="19,164" size="732,518" foregroundColorSelected="#2ECCFA" backgroundColor="#41000000" foregroundColor="#ffffff" backgroundColorSelected="#41000000" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/x379.png" backgroundPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Selctlist.png" enableWrapAround="1" zPosition="2" scrollbarMode="showNever" transparent="1" />
+	    <widget source="session.VideoPicture" render="Pig" position="1203,112" size="675,400" zPosition="2" backgroundColor="#df0b1300" />
+	    <widget source="session.CurrentService" render="Label" position="1203,464" size="675,63" zPosition="3" font="Regular; 34" noWrap="1" backgroundColor="#80000000" transparent="0" valign="center" halign="center" foregroundColor="white">
+	    <convert type="ServiceName">Name</convert>
+	    </widget>
+	    <widget source="global.CurrentTime" render="Label" position="11,5" size="231,37" zPosition="5" font="Regular; 30" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" halign="center">
+	    <convert type="ClockToText">Format:%H:%M:%S</convert>
+	    </widget>
+	    <widget source="global.CurrentTime" render="Label" position="274,5" size="280,37" font="Regular; 28" halign="center" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" zPosition="5">
+	    <convert type="ClockToText">Format:%d. %B. %Y</convert>
+	    </widget>
+	    <widget name="Infos" position="19,717" size="732,50" zPosition="4" font="Regular;35" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <widget name="Dat_Exprt" position="1210,5" size="700,70" zPosition="4" font="Regular;28" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <widget name="Infos_selct" position="19,87" size="732,50" zPosition="4" font="Regular;38" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+		<widget name="loading" position="19,770" size="732,50" zPosition="4" font="Regular;38" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	    <ePixmap position="3,910" size="50,144" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/ColorsBouttons.png" zPosition="0" transparent="1" alphatest="blend" />
+	</screen>
+	<!-- List_Stream_Vod -->
+    <screen name="Screen_MyStalkerIptv_Menu_Stalker_Channel_List_VOD" position="0,0" size="1920,1080" backgroundColor="#41000000" flags="wfNoBorder" title="Stalker_Channel_List_VOD">
+	    <ePixmap position="0,2" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/menu_Vod.png" zPosition="0" transparent="1" />
+	    <widget name="menu_stalker_Channel_List_VOD" position="19,164" size="732,518" foregroundColorSelected="#2ECCFA" backgroundColor="#41000000" foregroundColor="#ffffff" backgroundColorSelected="#41000000" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/x379.png" backgroundPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Selctlist.png" enableWrapAround="1" zPosition="2" scrollbarMode="showNever" transparent="1" />
+	    <widget source="session.VideoPicture" render="Pig" position="1203,112" size="675,400" zPosition="2" backgroundColor="#df0b1300" />
+	    <widget source="session.CurrentService" render="Label" position="1203,464" size="675,63" zPosition="3" font="Regular; 34" noWrap="1" backgroundColor="#80000000" transparent="0" valign="center" halign="center" foregroundColor="white">
+	    <convert type="ServiceName">Name</convert>
+	    </widget>
+	    <widget source="global.CurrentTime" render="Label" position="11,5" size="231,37" zPosition="5" font="Regular; 30" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" halign="center">
+	    <convert type="ClockToText">Format:%H:%M:%S</convert>
+	    </widget>
+	    <widget source="global.CurrentTime" render="Label" position="274,5" size="280,37" font="Regular; 28" halign="center" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" zPosition="5">
+	    <convert type="ClockToText">Format:%d. %B. %Y</convert>
+	    </widget>
+	    <widget name="Infos" position="19,717" size="732,50" zPosition="4" font="Regular;35" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <widget name="Dat_Exprt" position="1210,5" size="700,70" zPosition="4" font="Regular; 28" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <widget name="Infos_selct" position="19,87" size="732,50" zPosition="4" font="Regular;38" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+		<!-- <widget name="Total" position="802,80" size="350,50" zPosition="4" font="Regular;38" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" /> -->
+		<widget name="poster" position="772,122" size="400,520" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/clear.png" zPosition="1" transparent="1" alphatest="blend" />
+	    <widget name="Total" position="19,770" size="732,50" zPosition="4" font="Regular;38" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <widget name="Infos_Mov_1" position="802,648" size="300,50" zPosition="4" font="Regular;28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	    <widget name="Infos_Mov_2" position="804,706" size="400,50" zPosition="4" font="Regular; 28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	    <widget name="Infos_Mov_3" position="1175,628" size="732,130" zPosition="4" font="Regular;28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="top" />
+	    <widget name="Infos_Mov_4" position="804,760" size="300,50" zPosition="4" font="Regular; 28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	    <widget name="Infos_Mov_5" position="20,830" size="732,120" zPosition="4" font="Regular;28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="top" />
+	    <widget name="Infos_Mov_6" position="20,958" size="732,120" zPosition="4" font="Regular; 28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="top" />
+	    <widget name="Infos_Mov_7" position="1175,567" size="732,50" zPosition="4" font="Regular; 28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	    <!-- <widget name="Infos_Mov_8" position="803,828" size="1110,250" zPosition="4" font="Regular; 29" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="top" /> -->
+	    <widget source="Infos_Mov" options="movetype=running,wrap,startpoint=0,direction=top,steptime=30,repeat=0,oneshot=0,startdelay=1000,always=0" render="SupTVoDNeWRunningText" position="803,828" size="1110,250" backgroundColor="#44000000" foregroundColor="#ffffff" font="Regular;32" transparent="1" zPosition="4" />
+	    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/stars/star_b.png" position="877,100" size="220,20" alphatest="blend" zPosition="2" transparent="1" />
+	    <widget render="SupTVoDNeWStalker" source="rating" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/stars/star.png" position="877,100" size="220,20" alphatest="blend" transparent="1" zPosition="3" />
+	    <widget name="connect" position="1694,765" size="220,50" zPosition="4" font="Regular;28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/button_blue.png" position="1670,780" size="20,20" alphatest="blend" zPosition="2" transparent="1" />
+	    <eLabel position="19,54" zPosition="4" size="250,25" halign="left" font="Regular; 24" transparent="1" foregroundColor="#ffffff" backgroundColor="#80000000" text="KEY_MENU : TMDB" />
+	    <eLabel position="280,54" zPosition="4" size="400,25" halign="left" font="Regular; 24" transparent="1" foregroundColor="#ffffff" backgroundColor="#80000000" text="KEY_RECORD : Download Video" />
+	</screen>
+	<!-- SERIES_List -->
+	<screen name="Screen_MyStalkerIptv_Menu_Stalker_SERIES" position="0,0" size="1920,1080" backgroundColor="#41000000" flags="wfNoBorder" title="Menu_Stalker_Channel">
+	    <ePixmap position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/menu_Vod.png" zPosition="0" transparent="1" />
+	    <widget name="menu_stalker_Channel_series" position="19,164" size="732,518" foregroundColorSelected="#2ECCFA" backgroundColor="#41000000" foregroundColor="#ffffff" backgroundColorSelected="#41000000" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/x379.png" backgroundPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Selctlist.png" enableWrapAround="1" zPosition="2" scrollbarMode="showNever" transparent="1" />
+	    <widget source="session.VideoPicture" render="Pig" position="1203,112" size="675,400" zPosition="2" backgroundColor="#df0b1300" />
+	    <widget source="session.CurrentService" render="Label" position="1203,464" size="675,63" zPosition="3" font="Regular; 34" noWrap="1" backgroundColor="#80000000" transparent="0" valign="center" halign="center" foregroundColor="white">
+	    <convert type="ServiceName">Name</convert>
+	    </widget>
+	    <widget source="global.CurrentTime" render="Label" position="11,5" size="231,37" zPosition="5" font="Regular; 30" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" halign="center">
+	    <convert type="ClockToText">Format:%H:%M:%S</convert>
+	    </widget>
+	    <widget source="global.CurrentTime" render="Label" position="274,5" size="280,37" font="Regular; 28" halign="center" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" zPosition="5">
+	    <convert type="ClockToText">Format:%d. %B. %Y</convert>
+	    </widget>
+	    <widget name="Infos" position="19,717" size="732,50" zPosition="4" font="Regular;28" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <widget name="Dat_Exprt" position="1210,5" size="700,70" zPosition="4" font="Regular;28" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <widget name="Infos_selct" position="19,87" size="732,50" zPosition="4" font="Regular;38" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+		<widget name="loading" position="19,772" size="732,50" zPosition="4" font="Regular;38" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+		<ePixmap position="3,910" size="50,144" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/ColorsBouttons.png" zPosition="0" transparent="1" alphatest="blend" />
+	</screen>
+	<!-- List_Seasons_Series -->
+    <screen name="Screen_MyStalkerIptv_Menu_Stalker_SERIES_List" position="0,0" size="1920,1080" backgroundColor="#41000000" flags="wfNoBorder" title="Menu_Stalker_Channel_List">
+	    <ePixmap position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/menu_Vod.png" zPosition="0" transparent="1" />
+	    <widget name="menu_stalker_Channel_List_series" position="19,164" size="732,518" foregroundColorSelected="#2ECCFA" backgroundColor="#41000000" foregroundColor="#ffffff" backgroundColorSelected="#41000000" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/x379.png" backgroundPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Selctlist.png" enableWrapAround="1" zPosition="2" scrollbarMode="showNever" transparent="1" />
+	    <widget source="session.VideoPicture" render="Pig" position="1203,112" size="675,400" zPosition="2" backgroundColor="#df0b1300" />
+	    <widget source="session.CurrentService" render="Label" position="1203,464" size="675,63" zPosition="3" font="Regular; 34" noWrap="1" backgroundColor="#80000000" transparent="0" valign="center" halign="center" foregroundColor="white">
+	    <convert type="ServiceName">Name</convert>
+	    </widget>
+	    <widget source="global.CurrentTime" render="Label" position="11,5" size="231,37" zPosition="5" font="Regular; 30" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" halign="center">
+	    <convert type="ClockToText">Format:%H:%M:%S</convert>
+	    </widget>
+	    <widget source="global.CurrentTime" render="Label" position="274,5" size="280,37" font="Regular; 28" halign="center" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" zPosition="5">
+	    <convert type="ClockToText">Format:%d. %B. %Y</convert>
+	    </widget>
+	    <widget name="Infos" position="19,717" size="732,50" zPosition="4" font="Regular;35" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <widget name="Dat_Exprt" position="1210,5" size="700,70" zPosition="4" font="Regular; 28" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <widget name="Infos_selct" position="19,87" size="732,50" zPosition="4" font="Regular;38" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+		<widget name="Total" position="19,770" size="732,50" zPosition="4" font="Regular;38" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+		<widget name="poster" position="772,122" size="400,520" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/clear.png" zPosition="1" transparent="1" alphatest="blend" />
+	    <widget name="Infos_Mov_1" position="802,648" size="300,50" zPosition="4" font="Regular;28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	    <widget name="Infos_Mov_2" position="804,706" size="400,50" zPosition="4" font="Regular; 28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	    <widget name="Infos_Mov_3" position="1175,628" size="732,130" zPosition="4" font="Regular;28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="top" />
+	    <widget name="Infos_Mov_4" position="804,760" size="300,50" zPosition="4" font="Regular; 28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	    <widget name="Infos_Mov_5" position="20,830" size="732,120" zPosition="4" font="Regular;28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="top" />
+	    <widget name="Infos_Mov_6" position="20,958" size="732,120" zPosition="4" font="Regular; 28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="top" />
+	    <widget name="Infos_Mov_7" position="1175,567" size="732,50" zPosition="4" font="Regular; 28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	    <!-- <widget name="Infos_Mov_8" position="803,828" size="1110,250" zPosition="4" font="Regular; 29" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="top" /> -->
+	    <widget source="Infos_Mov" options="movetype=running,wrap,startpoint=0,direction=top,steptime=30,repeat=0,oneshot=0,startdelay=1000,always=0" render="SupTVoDNeWRunningText" position="803,828" size="1110,250" backgroundColor="#44000000" foregroundColor="#ffffff" font="Regular;32" transparent="1" zPosition="4" />
+	    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/stars/star_b.png" position="877,100" size="220,20" alphatest="blend" zPosition="2" transparent="1" />
+	    <widget render="SupTVoDNeWStalker" source="rating" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/stars/star.png" position="877,100" size="220,20" alphatest="blend" transparent="1" zPosition="3" />
+		<ePixmap position="3,910" size="50,144" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/ColorsBouttons.png" zPosition="0" transparent="1" alphatest="blend" />
+	</screen>
+    <screen name="Screen_MyStalkerIptv_Menu_Stalker_SERIES_Season" position="0,0" size="1920,1080" backgroundColor="#41000000" flags="wfNoBorder" title="Menu_Stalker_Channel_List">
+	    <ePixmap position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/menu_Vod.png" zPosition="0" transparent="1" />
+	    <widget name="menu_stalker_Channel_List_season" position="19,164" size="732,518" foregroundColorSelected="#2ECCFA" backgroundColor="#41000000" foregroundColor="#ffffff" backgroundColorSelected="#41000000" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/x379.png" backgroundPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Selctlist.png" enableWrapAround="1" zPosition="2" scrollbarMode="showNever" transparent="1" />
+		<widget name="menu_stalker_Series_season" position="19,164" size="732,518" foregroundColorSelected="#2ECCFA" backgroundColor="#41000000" foregroundColor="#ffffff" backgroundColorSelected="#41000000" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/x379.png" backgroundPixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/Selctlist.png" enableWrapAround="1" zPosition="2" scrollbarMode="showNever" transparent="1" />
+	    <widget source="session.VideoPicture" render="Pig" position="1203,112" size="675,400" zPosition="2" backgroundColor="#df0b1300" />
+	    <widget source="session.CurrentService" render="Label" position="1203,464" size="675,63" zPosition="3" font="Regular; 34" noWrap="1" backgroundColor="#80000000" transparent="0" valign="center" halign="center" foregroundColor="white">
+	    <convert type="ServiceName">Name</convert>
+	    </widget>
+	    <widget source="global.CurrentTime" render="Label" position="11,5" size="231,37" zPosition="5" font="Regular; 30" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" halign="center">
+	    <convert type="ClockToText">Format:%H:%M:%S</convert>
+	    </widget>
+	    <widget source="global.CurrentTime" render="Label" position="274,5" size="280,37" font="Regular; 28" halign="center" foregroundColor="#2eccfa" backgroundColor="black" transparent="1" zPosition="5">
+	    <convert type="ClockToText">Format:%d. %B. %Y</convert>
+	    </widget>
+	    <widget name="Infos" position="19,717" size="732,50" zPosition="4" font="Regular;28" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <widget name="Dat_Exprt" position="1210,5" size="700,70" zPosition="4" font="Regular;28" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+	    <widget name="Infos_selct" position="19,87" size="732,50" zPosition="4" font="Regular;38" foregroundColor="#2ECCFA" backgroundColor="#80000000" transparent="1" halign="center" valign="center" />
+		<widget name="poster" position="770,122" size="400,520" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/clear.png" zPosition="1" transparent="1" alphatest="blend" />
+	    <widget name="Infos_Mov_1" position="802,648" size="300,50" zPosition="4" font="Regular;28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	    <widget name="Infos_Mov_2" position="804,706" size="400,50" zPosition="4" font="Regular; 28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	    <widget name="Infos_Mov_3" position="1175,630" size="732,130" zPosition="4" font="Regular;28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="top" />
+	    <widget name="Infos_Mov_4" position="804,760" size="300,50" zPosition="4" font="Regular; 28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	    <widget name="Infos_Mov_5" position="20,830" size="732,120" zPosition="4" font="Regular;28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="top" />
+	    <widget name="Infos_Mov_6" position="20,958" size="732,120" zPosition="4" font="Regular; 28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="top" />
+	    <widget name="Infos_Mov_7" position="1175,567" size="732,50" zPosition="4" font="Regular; 28" foregroundColor="#ffffff" backgroundColor="#80000000" transparent="1" halign="left" valign="center" />
+	    <widget source="Infos_Mov" options="movetype=running,wrap,startpoint=0,direction=top,steptime=30,repeat=0,oneshot=0,startdelay=1000,always=0" render="SupTVoDNeWRunningText" position="803,828" size="1110,250" backgroundColor="#44000000" foregroundColor="#ffffff" font="Regular;32" transparent="1" zPosition="4" />
+	    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/stars/star_b.png" position="877,100" size="220,20" alphatest="blend" zPosition="2" transparent="1" />
+	    <widget render="SupTVoDNeWStalker" source="rating" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/stars/star.png" position="877,100" size="220,20" alphatest="blend" transparent="1" zPosition="3" />
+		<!-- <ePixmap position="3,910" size="50,144" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SupTVoDNeW/img/ColorsBouttons.png" zPosition="0" transparent="1" alphatest="blend" /> -->
+	</screen>
+	<screen name="InputBox" position="0,0" size="1920,1080" title="InputBox" backgroundColor="#80000000" flags="wfNoBorder">
+	    <widget name="text" position="670,345" size="580,60" font="Regular; 35" transparent="0" foregroundColor="#ffffff" backgroundColor="#80000000" zPosition="3" halign="center" />
+	    <widget name="input" position="670,477" size="580,62" font="Regular; 40" transparent="0" foregroundColor="#ffffff" backgroundColor="#80000000" zPosition="3" halign="center" />
+	    <eLabel position="610,340" zPosition="2" size="700,400" halign="center" font="Regular; 28" transparent="0" foregroundColor="#ffffff" backgroundColor="#80000000" />
+	    <eLabel position="660,390" zPosition="2" size="600,300" halign="center" font="Regular; 28" transparent="0" foregroundColor="#ffffff" backgroundColor="#80000000" />
+	    <eLabel position="610,291" zPosition="4" size="700,40" halign="center" font="Regular; 35" transparent="0" foregroundColor="#2ECCFA" backgroundColor="#80000000" text="Input Box" />
+	    <eLabel position="610,700" zPosition="4" size="700,40" halign="center" font="Regular; 35" transparent="0" foregroundColor="#ffffff" backgroundColor="#80000000" text="SupTVoDNeW" />
+	</screen>
+
+</skin>
